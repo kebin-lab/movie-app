@@ -55,11 +55,11 @@ export default {
         })
         .then(res => {
           this.movieInfos = res.data.results
-          console.log(res);
+          // console.log(res);
         }).catch(err => {
           console.log(err);
         }).finally(() => {
-          this.keyword = null;
+          // this.keyword = null;
         })
     }
   }

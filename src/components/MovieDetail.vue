@@ -1,6 +1,6 @@
 <template>
   <div class="detail-wrapper">
-    <h2>{{ movieInfo.title}}</h2>
+    <h2>{{ movieInfo.original_title}}</h2>
     <img :src="'https://image.tmdb.org/t/p/w185/'+ movieInfo.poster_path" alt="">
     <p>公開日:{{ movieInfo.release_date}}</p>
     <p>評価:{{ movieInfo.vote_average}}/10</p>
@@ -33,7 +33,7 @@ export default {
     })
     .then(res => {
       this.movieInfo = res.data
-      console.log(res);
+      // console.log(res);
     })
   }
 }

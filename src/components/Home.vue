@@ -70,7 +70,7 @@ export default {
     .then(res => {
       this.movieInfos = res.data.results
       this.last_page = res.data.total_pages
-      console.log(res);
+      // console.log(res);
     })
   },
   data() {
